@@ -9,161 +9,84 @@ export function EventPage() {
     <>
       <Analytics />
       <Navbar />
-      <main className="min-h-screen bg-black text-white">
-        {/* 히어로 섹션 */}
-        <section className="relative min-h-[80vh] flex items-center pt-20">
+      <main className="min-h-screen bg-white text-gray-900">
+        <section className="relative min-h-[60vh] flex items-center pt-20 bg-gradient-to-b from-primary-50 to-white">
           <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(147,51,234,0.2),transparent_70%)]" />
-            <motion.div
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.6, 0.3]
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-indigo-600/20 to-transparent blur-3xl"
-            />
+            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(255,195,0,0.15),transparent_70%)]" />
           </div>
           <div className="container mx-auto px-4 relative">
             <div className="max-w-3xl">
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="text-5xl md:text-7xl font-bold mb-6"
+                className="text-5xl font-bold mb-6"
               >
-                앱 설치하고<br />
-                <span className="bg-gradient-to-r from-purple-400 to-indigo-400 bg-clip-text text-transparent">
-                  수익 창출
-                </span>하세요
+                앱 설치 알바 이벤트
               </motion.h1>
               <motion.p
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.2 }}
-                className="text-xl text-gray-300 mb-8"
+                className="text-xl text-gray-600 mb-8"
               >
-                공유문자 앱 설치 영업으로<br />
-                매월 안정적인 수익을 만들어보세요
+                시간과 장소에 구애받지 않고<br />
+                자유롭게 수익을 만드세요
               </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.4 }}
-              >
-                <a
-                  href="http://pf.kakao.com/_CYGdn/chat"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center px-8 py-4 bg-purple-600 text-white rounded-full font-semibold hover:bg-purple-700 transition-colors"
-                >
-                  지금 시작하기
-                  <ArrowRight className="ml-2 h-5 w-5" />
-                </a>
-              </motion.div>
             </div>
           </div>
         </section>
 
-        {/* 수익 설명 섹션 */}
-        <section className="py-24 relative">
+        <section className="py-16">
           <div className="container mx-auto px-4">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="max-w-3xl mx-auto text-center"
-            >
-              <h2 className="text-4xl font-bold mb-8">
-                실제 수익 사례
-              </h2>
-              <div className="grid md:grid-cols-2 gap-8">
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-white/5 p-8 rounded-2xl backdrop-blur-sm"
-                >
-                  <p className="text-2xl font-bold text-purple-400 mb-4">600만원</p>
-                  <p className="text-gray-300">시나*** 회원님의<br />월 평균 수익</p>
-                </motion.div>
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  className="bg-white/5 p-8 rounded-2xl backdrop-blur-sm"
-                >
-                  <p className="text-2xl font-bold text-indigo-400 mb-4">450만원</p>
-                  <p className="text-gray-300">sang*** 회원님의<br />월 평균 수익</p>
-                </motion.div>
+            <div className="max-w-4xl mx-auto">
+              <div className="aspect-video mb-12">
+                <iframe
+                  width="100%"
+                  height="100%"
+                  src="https://www.youtube.com/embed/cPEXIWyJY5M"
+                  title="공유문자 소개 영상"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  className="rounded-2xl shadow-lg"
+                ></iframe>
               </div>
-            </motion.div>
-          </div>
-        </section>
 
-        {/* CTA 섹션 */}
-        <section className="py-24 relative overflow-hidden">
-          <div className="absolute inset-0">
-            <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(147,51,234,0.2),transparent_70%)]" />
-            <motion.div
-              animate={{
-                scale: [1, 1.2, 1],
-                opacity: [0.3, 0.6, 0.3]
-              }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                ease: "easeInOut"
-              }}
-              className="absolute inset-0 bg-gradient-to-br from-purple-600/20 via-indigo-600/20 to-transparent blur-3xl"
-            />
-          </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="container mx-auto px-4 relative"
-          >
-            <div className="max-w-3xl mx-auto text-center">
-              <motion.h2
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-white via-purple-500 to-indigo-500 bg-clip-text text-transparent"
-              >
-                지금 바로 시작하세요
-              </motion.h2>
-              <motion.p
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-                className="text-xl text-gray-300 mb-12"
-              >
-                앱 설치 영업 아르바이트로<br />
-                쉽고 빠르게 수익을 만들어보세요
-              </motion.p>
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.6 }}
-                className="flex justify-center"
-              >
-                <a
-                  href="http://pf.kakao.com/_CYGdn/chat"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="group relative px-10 py-6 bg-gradient-to-r from-purple-600 to-indigo-600 text-white rounded-xl font-bold text-lg overflow-hidden"
-                >
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-indigo-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
-                  <div className="relative flex items-center">
-                    카카오톡으로 지원하기
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                  </div>
-                </a>
-              </motion.div>
+              <div className="bg-primary-50 p-8 rounded-2xl mb-12">
+                <h2 className="text-3xl font-bold mb-6">이벤트 상세 내용</h2>
+                <div className="space-y-4 text-gray-600">
+                  <p>• 기간: 상시 모집</p>
+                  <p>• 대상: 만 18세 이상 누구나</p>
+                  <p>• 수익: 앱 설치 1건당 10,000원</p>
+                  <p>• 정산: 매주 금요일 일괄 정산</p>
+                  <p>• 활동 방법:</p>
+                  <ul className="list-disc pl-8 space-y-2">
+                    <li>주변 지인들에게 앱 설치 안내</li>
+                    <li>SNS를 통한 앱 홍보</li>
+                    <li>오프라인 홍보 활동</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white p-8 rounded-2xl shadow-lg">
+                <h3 className="text-2xl font-bold mb-4">지금 바로 시작하세요</h3>
+                <p className="text-gray-600 mb-6">
+                  카카오톡 채널로 문의하시면<br />
+                  상세한 활동 방법과 수익 창출 노하우를 안내해드립니다.
+                </p>
+                <div className="flex justify-center">
+                  <a
+                    href="http://pf.kakao.com/_CYGdn/chat"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors"
+                  >
+                    카카오톡으로 문의하기
+                  </a>
+                </div>
+              </div>
             </div>
-          </motion.div>
+          </div>
         </section>
       </main>
       <Footer />
