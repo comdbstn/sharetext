@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Share2, DollarSign, Clock, MapPin, Star, Users, TrendingUp, Shield, CheckCircle2, ArrowRight } from 'lucide-react'
+import { Share2, DollarSign, Clock, MapPin, Star, Shield, CheckCircle2, ArrowRight } from 'lucide-react'
 import { Navbar } from './components/navigation/Navbar'
 import { Footer } from './components/layout/Footer'
 import { EventPage } from './pages/EventPage'
