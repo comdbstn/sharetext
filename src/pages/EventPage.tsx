@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ArrowRight } from "lucide-react";
 import { Navbar } from "../components/navigation/Navbar";
 import { Footer } from "../components/layout/Footer";
 import { Analytics } from "@vercel/analytics/react";
