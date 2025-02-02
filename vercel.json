@@ -2,19 +2,6 @@
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ],
-  "redirects": [
-    {
-      "source": "/:path*",
-      "has": [
-        {
-          "type": "host",
-          "value": "sharetext-beryl.vercel.app"
-        }
-      ],
-      "destination": "https://sharetext-beryl.vercel.app/:path*",
-      "permanent": true
-    }
-  ],
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "framework": "vite",
