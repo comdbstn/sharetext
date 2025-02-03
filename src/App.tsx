@@ -55,7 +55,7 @@ function MainPage() {
                 transition={{ delay: 0.4 }}
               >
                 <a
-                  href="http://pf.kakao.com/_CYGdn/chat"
+                  href="https://open.kakao.com/o/g2RM7Ybh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors"
@@ -99,8 +99,8 @@ function MainPage() {
                   transition={{ delay: 0.2 }}
                   className="bg-white p-8 rounded-2xl shadow-lg"
                 >
-                  <p className="text-4xl font-bold text-primary-500 mb-2">매주</p>
-                  <p className="text-gray-600">금요일<br />정산</p>
+                  <p className="text-4xl font-bold text-primary-500 mb-2">25일</p>
+                  <p className="text-gray-600">다음달<br />정산</p>
                 </motion.div>
                 <motion.div
                   initial={{ opacity: 0, scale: 0.8 }}
@@ -199,7 +199,7 @@ function MainPage() {
                       <h3 className="text-xl font-bold mb-2">투명한 정산 시스템</h3>
                       <p className="text-gray-600">
                         앱 설치 현황을 실시간으로 확인할 수 있으며,<br />
-                        매주 금요일 약속된 시간에 정산됩니다.
+                        매월 25일에 정산됩니다.
                       </p>
                     </div>
                   </div>
@@ -313,10 +313,10 @@ function MainPage() {
                     3
                   </div>
                   <div className="flex-1 bg-primary-50 p-6 rounded-2xl">
-                    <h3 className="text-xl font-bold mb-2">매주 금요일 정산</h3>
+                    <h3 className="text-xl font-bold mb-2">매월 25일 정산</h3>
                     <p className="text-gray-600">
-                      설치 건당 10,000원의 수수료가 지급됩니다.<br />
-                      매주 금요일에 일괄 정산되어 안정적인 수익을 얻을 수 있습니다.
+                      설치 건당 10,000원의 활동비가 지급됩니다.<br />
+                      다음달 25일에 정산되어 안정적인 수익을 얻을 수 있습니다.
                     </p>
                   </div>
                 </motion.div>
@@ -344,7 +344,7 @@ function MainPage() {
                 >
                   <h3 className="text-xl font-bold mb-3">Q. 정산은 어떻게 이루어지나요?</h3>
                   <p className="text-gray-600">
-                    매주 금요일에 정산이 이루어집니다. 앱 설치 건당 활동비가 지급되며,
+                    매월 25일에 정산이 이루어집니다. 앱 설치 건당 활동비가 지급되며,
                     등록하신 계좌로 안전하게 입금됩니다.
                   </p>
                 </motion.div>
@@ -406,7 +406,7 @@ function MainPage() {
                 className="flex justify-center"
               >
                 <a
-                  href="http://pf.kakao.com/_CYGdn/chat"
+                  href="https://open.kakao.com/o/g2RM7Ybh"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors group"
@@ -458,7 +458,7 @@ function MainPage() {
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="http://pf.kakao.com/_CYGdn/chat"
+                    href="https://open.kakao.com/o/g2RM7Ybh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors"

@@ -57,7 +57,7 @@ export function EventPage() {
                   <p>• 기간: 상시 모집</p>
                   <p>• 대상: 만 18세 이상 누구나</p>
                   <p>• 수익: 앱 설치 1건당 10,000원</p>
-                  <p>• 정산: 매주 금요일 일괄 정산</p>
+                  <p>• 정산: 다음달 25일 일괄 정산</p>
                   <p>• 활동 방법:</p>
                   <ul className="list-disc pl-8 space-y-2">
                     <li>주변 지인들에게 앱 설치 안내</li>
@@ -75,7 +75,7 @@ export function EventPage() {
                 </p>
                 <div className="flex justify-center">
                   <a
-                    href="http://pf.kakao.com/_CYGdn/chat"
+                    href="https://open.kakao.com/o/g2RM7Ybh"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="inline-flex items-center px-8 py-4 bg-primary-500 text-white rounded-full font-semibold hover:bg-primary-600 transition-colors"
